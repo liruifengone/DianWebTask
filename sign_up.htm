@@ -122,37 +122,24 @@
             font-size: 36px;
             color: #ffffff;
             position: absolute;
-            right: 5px;
-            top:40px;
+            top: 6px;
+            float: left;
+            height: 94px;
+        }
+        #localsign
+        {
+            color: #eb9b19;
+            background: #ffffff;
+        }
+        .partArea
+        {
+            width: 160px;
         }
         #seedclass
         {
-            position: absolute;
-            top:40px; 
-            left: 40px;                       
+            width: 1200px
         }
-        #part1
-        {
-            position: absolute;
-            right: 520px;
-        }
-        #part2
-        {
-            position: absolute;
-            right: 360px;
-        }
-        #part3
-        {
-            position: absolute;
-            right: 200px;
-        }
-        #part4
-        {
-            color: #eb9b19;
-            background:#ffffff;
-            position: absolute;
-            right: 40px;
-        }
+        
         #Content_Part
         {
             width: 1920px;
@@ -176,71 +163,16 @@
         /*
             以下为spotDiv的布局
         */
-        #allWhite
-        {   
-            position: absolute;
-            left: 0px;
-            top: 20px;
-
-        }
-        #allOrange
+        #progressbar
         {
             position: absolute;
-            left: -60px;
-            top: 74px;
-            visibility: hidden;
-        }
-        #halfOrange
-        {
-            position: absolute;
-            left: -60px;
-            top: 38px;
-            visibility: hidden;
-        }
-        #spot1
-        {
-            position: absolute;
-            left: -30px;
-            top: 60px;
-        }
-        #spot2
-        {
-            position: absolute;
-            left: 400px;
-            top: 62px;
-            visibility: hidden;
-        }
-        #spot3
-        {
-            position: absolute;
-            left: 820px;
-            top: 62px;
-            visibility: hidden;
-        }
-        .info
-        {
-            font-size: 24px;
-            color: #eb9b19;
-        }
-        #info1
-        {
-            position: absolute;
-            top: 140px;
-            left: -50px;
-        }
-        #info2
-        {
-            position: absolute;
-            top: 140px;
-            left: 380px;
-            visibility: hidden;
-        }
-        #info3
-        {
-            position: absolute;
-            top: 140px;
             left: 780px;
-            visibility: hidden;
+            top: 300px;
+            width: 1400px;
+        }
+        .progressline
+        {
+            position: absolute;
         }
         #form
         {
@@ -250,6 +182,53 @@
             font-family: PWChalk;
             font-size: 24px;
             color: black;
+            width: 500;
+        }
+        .info
+        {
+            font-size: 24px;
+        }
+        #info2
+        {
+            visibility: hidden;
+        }
+        #info3
+        {
+            visibility: hidden;
+        }
+        #allWhite
+        {
+            position: absolute;
+            top: -40px;
+            left: 44px;
+        }
+        #halfOrange
+        {
+            position: absolute;
+            left: -34px;
+            top: -18.5%;
+            visibility: hidden;
+        }
+        #allOrange
+        {
+            position: absolute;
+            left: -14px;
+            top: 11%;
+            visibility: hidden;
+        }
+        #spot2
+        {
+            visibility: hidden;
+        }
+        #spot3
+        {
+            visibility: hidden;
+        }
+
+        .inputs
+        {
+            width: 580px;
+            height: 80px;
         }
         .inputInformation
         {
@@ -258,99 +237,25 @@
             font-family: PWChalk;
             font-size: 24px;
             outline: 0;
-        }
-        #information1
-        {
             border:none;
             height: 36px;
             width: 400px;
             position: absolute;
-            top: 70px;
         }
-        #information2
+        .inputline
         {
-            border:none;
-            height: 36px;
-            width: 400px;  
-            position: absolute;
-            left: 500px;
-            top: 70px; 
-        }
-        #information3
-        {
-            border:none;
-            height: 36px;
-            width: 400px;
-            position: absolute;
-            top: 260px;   
-        }
-        #information4
-        {
-            border:none;
-            height: 36px;
-            width: 400px;
-            position: absolute;
-            left: 500px;
-            top: 260px;
-        }
-        #INFO1
-        {
-            position: absolute;
-        }
-        #INFO2
-        {
-            position: absolute;
-            left: 500px;
-        }
-        #INFO3
-        {
-            position: absolute;
-            top: 200px;
-        }
-        #INFO4
-        {
-            position: absolute;
-            top: 200ox;
-            left: 500px;
-            bottom: -210px;
-        }
-        #underline
-        {   
-            position: absolute;
-            left: 770px;
-            bottom: 410px;
-        }
-        #line11
-        {
-            position: absolute; 
-        }
-        #line12
-        {
-            position: absolute;
-            left: 500px;
-        }
-        #line21
-        {
-            position: absolute;
-            top: 190px;
-        }
-        #line22
-        {
-            position: absolute;
-            left: 500px;
-            top: 190px;
+            position: relative;
+            top: -20px;
         }
         #Next
         {
             position: absolute;
-            left: 1050px;
-            bottom: 70px;
             font-size: 36px;
             font-family: PWChalk;
             width: 300px;
             height: 60px;
             background: #eb9b19;
-            border: 0;
+            border: 0;      
         }
 
     </style>
@@ -358,20 +263,53 @@
 </head>
 <body >
     <div id="Part">
-        <div id="seedclass">SEED CLASS</div>
-        <div id="partNum" align="right">
-            <span id="part1" onclick="location.href='DianTask2.htm'">PART1</span>
-            <span id="part2" onclick="location.href='part2.htm'">PART2</span>
-            <span id="part3" onclick="location.href='part3.htm'">PART3</span>
-            <span id="part4" onclick="location.href='sign_up.htm'">SIGNUP</span>
-        </div>
+        <table id="partNum" border="0px">
+            <tr>
+                <td class="partArea" id="seedclass">SEED CLASS</td>
+                <td id="empty">&nbsp;</td>
+                <td class="partArea" onclick="location.href='DianTask2.htm'">PART1</td>
+                <td class="partArea" onclick="location.href='part2.htm'">PART2</td>
+                <td class="partArea" onclick="location.href='part3.htm'">PART3</td>
+                <td class="partArea" onclick="location.href='sign_up.htm'" id="localsign">SIGN UP</td>
+            </tr>
+        </table>
     </div>
     <div id="Content_Part">
             <img id="peopleDiv" src="fontTask/picture/people.png"/>
-        <div id="spotDiv">
-            <img src="fontTask/picture/虚线白.png" id="allWhite" />
-            <img src="fontTask/picture/虚线橙半.png" id="halfOrange"/>
-            <img src="fontTask/picture/虚线橙全.png" id="allOrange">
+            <table id="progressbar" border="0px">
+                <tr>
+                    <td>
+                        <img src="fontTask/picture/点.png" id="spot1" />
+                    </td>
+                    <td>
+                        <img src="fontTask/picture/点.png" id="spot2" />
+                    </td>
+                    <td>
+                        <img src="fontTask/picture/点.png" id="spot3" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <img src="fontTask/picture/虚线白.png" id="allWhite" class="progressline"/>
+                    
+                        <img src="fontTask/picture/虚线橙半.png" id="halfOrange" class="progressline"/>
+                    
+                        <img src="fontTask/picture/虚线橙全.png" id="allOrange" class="progressline"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="info" id="info1">
+                        INFO ONE
+                    </td>
+                    <td class="info" id="info2">
+                        INFO TWO
+                    </td>
+                    <td class="info" id="info3">
+                        INFO THREE
+                    </td>
+                </tr>
+            </table>
+        <!--    <div id="spotDiv">
             <br/>
             <img src="fontTask/picture/点.png" id="spot1" />
             <img src="fontTask/picture/点.png" id="spot2" />
@@ -383,18 +321,27 @@
                  <span class="info" id="info3">INFO THREE</span>   
                     
             </div>
+        -->
         </div>
-            <table border="0" id="form">
+            <table border="0px" id="form">
                 <tr>
                     <td class="query" id="INFO1">INFO1</td>
                     <td class="query" id="INFO2">INFO2</td>
                 </tr>
                 <tr>
-                    <td id="test"> 
+                    <td class="inputs"> 
                         <input type="text" id="information1" class="inputInformation" name="test"/>
                     </td>
-                    <td>
+                    <td class="inputs">
                         <input type="text" id="information2" class="inputInformation">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="fontTask/picture/线.png" class="inputline"/>
+                    </td>
+                    <td>
+                        <img src="fontTask/picture/线.png" class="inputline"/>
                     </td>
                 </tr>
                 <tr>
@@ -402,35 +349,28 @@
                     <td class="query" id="INFO4">INFO4</td>    
                 </tr>
                 <tr>
-                        <td>
-                            <input type="text" id="information3" class="inputInformation"/>
-                        </td>
-                        <td>
-                            <input type="text" id="information4" class="inputInformation"/>
-                        </td>
-                    </tr>
-            </table>
-            <table border="0" id="underline">
-                <tr>
-                    <td>
-                        <img src="fontTask/picture/线.png" id="line11"/>
+                    <td class="inputs">
+                        <input type="text" id="information3" class="inputInformation"/>
                     </td>
-                    <td>
-                        <img src="fontTask/picture/线.png" id="line12"/>
+                    <td class="inputs">
+                        <input type="text" id="information4" class="inputInformation"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="fontTask/picture/线.png" id="line21"/>
+                        <img src="fontTask/picture/线.png" class="inputline"/>
                     </td>
                     <td>
-                        <img src="fontTask/picture/线.png" id="line22"/>
+                        <img src="fontTask/picture/线.png" class="inputline"/>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <center><button id="Next" onclick="GoTo_Info_List2()" class="next">NEXT</button>  </center>  
+                    </td>    
+                </tr>
             </table>
-            <center>
-                <button id="Next" onclick="GoTo_Info_List2()" class="next">NEXT</button>
-            </center>
+            
     </div>
 </body>
 </html>
